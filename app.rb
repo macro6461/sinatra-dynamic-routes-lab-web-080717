@@ -35,7 +35,6 @@ class App < Sinatra::Base
 
   get '/:operation/:number1/:number2' do
 
-    @operator = params[:operation]
     @num1 = params[:number1].to_i
     @num2 = params[:number2].to_i
 
